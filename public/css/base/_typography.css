@@ -82,3 +82,10 @@ footer a
 }
 
 /* ------- media screen ------- */
+@media screen and (max-width: 668px)
+{
+    .navbar
+    {
+        font-size: 0.92em;
+    }
+}
