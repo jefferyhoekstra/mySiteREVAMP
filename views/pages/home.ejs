@@ -1,6 +1,12 @@
 <div class="home-page">
     <% for(let i=0; i < HomePostsData.length; i++) { %>
-        <div class=<%= HomePostsData[i].postboxType %>>
+        <a <% if (HomePostsData[i].link === true) { %>
+          href="/posts/<%= HomePostsData[i]._id %>"
+        <% } else { %>
+            href="#"
+        <% } %>
+        class="postbox-link">                 
+            <div class=<%= HomePostsData[i].postboxType %>>
             <% if (HomePostsData[i].isPinned === true) { %>
                 <img class="isPinned" src="/images/icons/pinned.png" width="20px" alt="">
          <% } %>
@@ -16,5 +22,6 @@
             <h3><%= HomePostsData[i].description %></h3>
             <h5><%= HomePostsData[i].hashtags %></h5>
         </div>
+        </a>
  <% } %>
 </div>

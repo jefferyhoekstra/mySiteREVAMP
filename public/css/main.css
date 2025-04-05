@@ -17,14 +17,22 @@
 
 /* ------- global styles ------- */
 
+::-webkit-scrollbar
+{
+    display: none;
+}
+
 /* background */
 html 
 {
+    scroll-behavior: smooth;
     background-color: var(--background-color);
+    scrollbar-width: none;
 }
 
 /* main animation */
 main
 {
+    
     animation: fadeInLoad 0.7s ease-in-out forwards;
 }

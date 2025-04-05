@@ -33,7 +33,7 @@ server.get("/", async (request, response) => {
     let { page } = request.query;
     try {
         const HomePostsData = await HomePosts.find();
-        console.log(HomePostsData);
+        // console.log(HomePostsData);
         if (page === undefined)
         {
             page = "home";
@@ -42,4 +42,15 @@ server.get("/", async (request, response) => {
     } catch {
         response.status(500).send(`Error getting data`)
     }
-})
+});
+
+server.get("/posts/:id", async (request, response) => {
+    const { id } = request.params;
+    page = "singlePost";
+    try {
+        const homePost = await HomePosts.findById(id);
+        response.render("layouts/main", { HomePosts });
+    } catch {
+        response.status(500).send(`Cake with ID ${id} cannot be found`);
+      }
+});

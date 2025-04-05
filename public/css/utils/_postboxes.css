@@ -2,8 +2,7 @@
 
 .postbox-border
 {
-
-    width: clamp(300px, 50%, 650px);
+    width: clamp(200px, 80%, 650px);
     padding: 1em;
  
 
@@ -30,7 +29,7 @@
 
 .postbox-noborder
 {
-    width: clamp(300px, 50%, 650px);
+    width: clamp(200px, 80%, 650px);
     padding: 1em;
     border-radius: 20px;
     box-shadow: 0 0 18px var(--postbox-border-shadow-color);

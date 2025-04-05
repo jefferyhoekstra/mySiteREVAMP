@@ -41,7 +41,7 @@ const homePostsSchema = new Schema ({
         required: true,
     },
     link: {
-        type: String,
+        type: Boolean,
         required: false,
     },
     isPinned: {

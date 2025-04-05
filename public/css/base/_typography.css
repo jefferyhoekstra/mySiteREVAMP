@@ -47,6 +47,13 @@ header
 /* ------- postboxes ------ */
 
 /* postbox-border */
+
+/* link */
+.postbox-link {
+    display: flex; /* Ensures the <a> tag behaves like a flex container */
+    flex-direction: column; /* Adjusts the layout inside the box if needed */
+    text-decoration: none; /* Removes the underline for links */
+    color: inherit; /* Ensures the text inside the link inherits the parent color */}
 .postbox-border
 {
     font-size: 1.3em;
@@ -57,6 +64,15 @@ header
 {
     font-size: 1.3em;
     text-align: center;
+    white-space: normal; /* Allows text to wrap naturally */
+    overflow-wrap: anywhere; /* Breaks words only when necessary */
+    word-break: normal; /* Prevents breaking words letter by letter */
+    text-overflow: ellipsis; /* Adds "..." if the text overflows */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.postbox-noborder h5 {
+    text-align: left;
 }
 
 .postbox-border h4, h5 {
