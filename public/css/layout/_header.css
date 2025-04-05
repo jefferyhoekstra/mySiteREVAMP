@@ -1,0 +1,40 @@
+
+
+
+/* ------- navbar ------- */
+.navbar
+{
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: clamp(10%, 100%, 900px);
+}
+
+
+
+.logo, .navlinks 
+{
+    display: flex;
+    gap: 1em;
+    transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 668px)
+{
+    .navbar
+    {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logo, .navlinks 
+{
+    align-self: left;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+}

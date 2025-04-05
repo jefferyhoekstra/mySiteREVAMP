@@ -1,0 +1,30 @@
+/* ------- imports ------- */
+
+/* base */
+@import url('base/_typography.css');
+@import url('base/_variables.css');
+
+/* layout */
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+
+/* pages */
+@import url('pages/_home.css');
+
+/* utilities */
+@import url('utils/_animations.css');
+@import url('utils/_postboxes.css');
+
+/* ------- global styles ------- */
+
+/* background */
+html 
+{
+    background-color: var(--background-color);
+}
+
+/* main animation */
+main
+{
+    animation: fadeInLoad 0.7s ease-in-out forwards;
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "postboxType": "postbox-border",
+        "title": "Jeffery Hoekstra",
+        "subtitle": "Ontario, Canada",
+        "subtitleImage": [
+            "/images/icons/location.png"
+        ],
+        "subtitleImageSize": "40px",
+        "description": "I'm a 22-year-old full-stack developer focused on building efficient and scalable web and application solutions.",
+        "subDescription": "",
+        "techStack": [
+            "JavaScript",
+            "Node.js",
+            "MongoDB"
+        ],
+        "hashtags": [
+            "#webdev",
+            "#portfolio",
+            "#fullstack"
+        ],
+        "link": "https://example.com/project-link",
+        "isPinned": true
+    },
+    {
+        "postboxType": "postbox-noborder",
+        "title": "My Tech Stack",
+        "subtitle": "",
+        "subtitleImage": [
+            "/images/icons/c-sharp.png",
+            "/images/icons/c++.png",
+            "/images/icons/c.png",
+            "/images/icons/js.png",
+            "/images/icons/css-3.png",
+            "/images/icons/html-5.png",
+            "/images/icons/java.png",
+            "/images/icons/python.png"
+        ],
+        "subtitleImageSize": "50px",
+        "description": "",
+        "subDescription": "C, C++, C#, JavaScript, HTML5, CSS3, Java, and Python.",
+        "techStack": [
+            "C",
+            "C++",
+            "C#",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Java",
+            "Python"
+        ],
+        "hashtags": [
+            "#C",
+            "#C++",
+            "#Csharp",
+            "#C++",
+            "#JavaScript",
+            "#HTML5",
+            "#CSS3",
+            "#Java",
+            "#Python"
+        ],
+        "link": "https://example.com/project-link",
+        "isPinned": true
+    }
+]

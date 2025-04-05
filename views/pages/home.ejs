@@ -1,0 +1,20 @@
+<div class="home-page">
+    <% for(let i=0; i < HomePostsData.length; i++) { %>
+        <div class=<%= HomePostsData[i].postboxType %>>
+            <% if (HomePostsData[i].isPinned === true) { %>
+                <img class="isPinned" src="/images/icons/pinned.png" width="20px" alt="">
+         <% } %>
+            <h2><%= HomePostsData[i].title %></h2>
+            <% if (HomePostsData[i].subtitleImage.length === 1) { %>
+                <h4><img src=<%= HomePostsData[i].subtitleImage %> width=<%= HomePostsData[i].subtitleImageSize %>alt=""><%= HomePostsData[i].subtitle %></h4>
+            <% } else { %>
+            <% for(imageCount=0; imageCount < HomePostsData[i].subtitleImage.length; imageCount++) { %>
+                <img src=<%= HomePostsData[i].subtitleImage[imageCount] %> width=<%= HomePostsData[i].subtitleImageSize %>alt="">
+               <% } %>
+               <%= HomePostsData[i].subtitle %></h4>
+            <% } %>
+            <h3><%= HomePostsData[i].description %></h3>
+            <h5><%= HomePostsData[i].hashtags %></h5>
+        </div>
+ <% } %>
+</div>

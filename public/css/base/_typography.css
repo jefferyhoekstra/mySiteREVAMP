@@ -1,0 +1,84 @@
+/* ------- imports ------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ------- text styles ------- */
+main 
+{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+header, footer
+{
+    font-family: monospace;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+
+
+/* ------- header text styles ------- */
+header
+{
+    color: var(--main-text-color);
+}
+/* navbar */
+.navbar a
+{
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+.navbar .navlinks
+{
+    font-size: 1.6em;
+}
+
+.navbar .logo
+{
+    font-size: 1.8em;
+}
+
+
+
+/* ------- postboxes ------ */
+
+/* postbox-border */
+.postbox-border
+{
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.postbox-noborder
+{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.postbox-border h4, h5 {
+    color: var(--postbox-border-color);
+    font-weight: 200;
+}
+
+.postbox-border h1, h2, h3
+{
+    font-weight: 600;
+}
+
+/* ------- footer text styles ------- */
+footer
+{
+    text-align: center;
+    color: var(--main-text-color);
+}
+footer a
+{
+    color: var(--main-text-color);
+    font-style: italic;
+}
+
+/* ------- media screen ------- */

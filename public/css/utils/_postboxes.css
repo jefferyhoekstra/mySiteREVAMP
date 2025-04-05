@@ -1,0 +1,41 @@
+/* ------- postbox-border ------- */
+
+.postbox-border
+{
+
+    width: clamp(300px, 50%, 650px);
+    padding: 1em;
+ 
+
+    border: 1px solid var(--postbox-border-color);
+    border-radius: 20px;
+    box-shadow: 0 0 18px var(--postbox-border-shadow-color);
+
+    transition: all ease-in-out 0.2s;
+}
+
+.postbox-border img {
+    margin: 0 0.3em;
+}
+
+.postbox-border .isPinned, .postbox-noborder .isPinned
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* hover in _animation */
+
+.postbox-noborder
+{
+    width: clamp(300px, 50%, 650px);
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 18px var(--postbox-border-shadow-color);
+
+    transition: all ease-in-out 0.2s;
+}
+
+/* hover in _animation */

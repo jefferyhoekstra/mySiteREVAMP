@@ -1,0 +1,12 @@
+:root 
+{
+    --background-color: rgb(20, 20, 20);
+    --main-text-color: white;
+    --secondary-text-color: rgb(255, 170, 170);
+
+    --postbox-border-color: rgba(160, 160, 160, 0.8);
+    --postbox-border-shadow-color: rgba(0, 0, 0, 0.8);
+    --postbox-border-hover-shadow-color: rgba(255, 255, 255, 0.2);
+    --postbox-border-hover-color: rgba(255, 255, 255, 0.1);
+    --postbox-border-hover-border-color: rgba(255, 255, 255, 0.2);
+}
