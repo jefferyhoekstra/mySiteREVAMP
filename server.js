@@ -49,7 +49,7 @@ server.get("/posts/:id", async (request, response) => {
     page = "singlePost";
     try {
         const homePost = await HomePosts.findById(id);
-        response.render("layouts/main", { HomePosts });
+        response.render("layouts/main", { homePost });
     } catch {
         response.status(500).send(`Cake with ID ${id} cannot be found`);
       }
