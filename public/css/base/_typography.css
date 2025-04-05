@@ -61,7 +61,7 @@ header
 
 .postbox-border h4, h5 {
     color: var(--postbox-border-color);
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .postbox-border h1, h2, h3
